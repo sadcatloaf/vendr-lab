@@ -1,7 +1,13 @@
+import { AppState } from "../AppState.js"
+
+
+
+
 class MunniesService {
     addMunny() {
-        console.log('add munny')
-
+        console.log('add munny');
+        AppState.Munnies++
+        console.log('munny is' + AppState.Munnies);
     }
 
 
